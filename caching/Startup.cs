@@ -26,7 +26,7 @@ namespace caching
         {
             services.AddControllers();
 
-            services.AddStackExchangeRedisCache(options => options.Configuration = this.Configuration.GetConnectionString("redisServerUrl"));
+            services.AddStackExchangeRedisCache(options => options.Configuration = Configuration.GetConnectionString("redisServerUrl"));
 
 
         }
